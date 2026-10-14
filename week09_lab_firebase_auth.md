@@ -410,6 +410,7 @@ avdmanager list avd
 ```text
 บันทึกรูปผลลัพธ์ที่นี่ และคำอธิบาย
 ```
+<img width="1222" height="331" alt="image" src="https://github.com/user-attachments/assets/6e9e364d-191b-4cdc-a3f5-ed790bc971f2" />
 
 ---
 
