@@ -412,6 +412,9 @@ avdmanager list avd
 2. accessToken: ใช้ยืนยันสิทธิ์ในการเข้าถึงข้อมูลและ Google APIs ตามขอบเขตที่ได้รับอนุญาต
 3. การเชื่อมต่อ Firebase: นำ idToken และ accessToken มาสร้าง AuthCredential แล้วส่งให้ signInWithCredential() เพื่อให้ Firebase ตรวจสอบและเข้าสู่ระบบด้วยบัญชี Google ของผู้ใช้
 ```
+
+<img width="250" height="426" alt="image" src="https://github.com/user-attachments/assets/21d3481b-117e-40dc-a6c0-5320f68e7e24" />
+
 <img width="1222" height="331" alt="image" src="https://github.com/user-attachments/assets/6e9e364d-191b-4cdc-a3f5-ed790bc971f2" />
 
 ---
@@ -549,10 +552,27 @@ Widget build(BuildContext context) {
 
 > ✅ **Checkpoint 4.1** ถ่ายภาพหน้าจอ 3 ภาพเรียงกัน คือ (ก) แอปตอนเพิ่งเปิดขึ้นมาครั้งแรกแบบยังไม่ล็อกอิน แสดงหน้า Login (ข) หลังล็อกอินสำเร็จ แอปสลับไปแสดง `MainScaffold` อัตโนมัติโดยไม่ต้องกดอะไรเพิ่ม และ (ค) หลังกด "ออกจากระบบ" แอปสลับกลับไปหน้า Login เอง อธิบายว่าทำไมการใช้ `StreamBuilder` ฟัง `authStateChanges()` จึงทำให้ไม่ต้องเขียนโค้ดสั่ง Navigate ไปมาเอง
 
+```text
+1. การทำงานของ authStateChanges()
+เป็น Stream ที่คอยตรวจสอบสถานะผู้ใช้ เมื่อ Login สำเร็จจะส่งข้อมูล User และเมื่อ Logout จะส่งค่า null ออกมา
+2. การอัปเดตหน้าจอของ StreamBuilder
+เมื่อสถานะเปลี่ยน StreamBuilder จะสร้างหน้าจอใหม่ตามข้อมูลที่ได้รับ หากเป็น null จะแสดงหน้า LoginPage แต่หากมีข้อมูล User จะแสดงหน้า MainScaffold
+```
 
 ```text
-บันทึกรูปผลลัพธ์ที่นี่ (3 ภาพ) และคำอธิบาย
+(ก) แอปตอนเพิ่งเปิดขึ้นมาครั้งแรกแบบยังไม่ล็อกอิน
 ```
+<img width="282" height="612" alt="image" src="https://github.com/user-attachments/assets/d8146ee7-a258-4e57-abd3-ed7bf0f1680a" />
+
+```text
+(ข) หลังล็อกอินสำเร็จ
+```
+<img width="285" height="616" alt="image" src="https://github.com/user-attachments/assets/873127d3-304a-4c84-b644-b531704500a1" />
+
+```text
+(ค) หลังกด "ออกจากระบบ
+```
+<img width="282" height="613" alt="image" src="https://github.com/user-attachments/assets/0a4ae213-55ba-4ef7-be17-046cd794e0f4" />
 
 ---
 
