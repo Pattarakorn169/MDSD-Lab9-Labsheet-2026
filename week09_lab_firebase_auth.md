@@ -662,8 +662,14 @@ final pages = [
 > ✅ **Checkpoint 5.1** ถ่ายภาพหน้าจอ Home ที่แสดงสินค้าจากทั้งสองแหล่งข้อมูลปนกันอยู่ในลิสต์เดียว พร้อม Badge ที่แยกแหล่งที่มาชัดเจน (ถ้ายังไม่เคยมีประกาศจริงใน Firestore เลย ให้ทำส่วนที่ 6 ให้เสร็จก่อนแล้วย้อนกลับมาถ่ายภาพ Checkpoint นี้) อธิบายว่าการออกแบบให้ `HomePage` ไม่รู้จัก `ItemRepositoryApi`/`ItemRepositoryFirestore` โดยตรง แต่รู้จักผ่าน Interface `ItemRepository` เท่านั้น ช่วยให้ทดสอบหรือเปลี่ยนแหล่งข้อมูลในอนาคตง่ายขึ้นอย่างไร
 
 ```text
-บันทึกรูปผลลัพธ์ที่นี่ และคำอธิบาย
+แก้ไข class Item (lib/models/item.dart):
+    เพิ่ม field ใหม่: final String? sellerId   // nullable เพราะสินค้าจาก Fake Store API ไม่มี sellerId
+
+    เพิ่มเมธอด toFirestore() -> Map<String, dynamic>:
+        คืนค่า Map ที่มี key ตรงกับชื่อ field ทั้งหมด (title, price, description, category, imageUrl, sellerId)
 ```
+
+<img width="285" height="617" alt="image" src="https://github.com/user-attachments/assets/e5eb87a9-6198-4f15-8381-a4090762cb31" />
 
 ---
 
