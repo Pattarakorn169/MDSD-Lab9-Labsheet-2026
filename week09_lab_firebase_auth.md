@@ -172,8 +172,23 @@ Future<void> main() async {
 ```text
 บันทึกรูปผลลัพธ์ที่นี่ และคำอธิบายของแต่ละกรณี
 ```
+
+```text
+สมัครใช้งานครั้งแรก
+```
 <img width="325" height="712" alt="image" src="https://github.com/user-attachments/assets/7056f195-93f1-4509-b2a0-0a97d7010678" />
 
+<img width="1552" height="620" alt="image" src="https://github.com/user-attachments/assets/125a09a8-0ec7-48de-87e2-f1ecc1f70daa" />
+
+```text
+(ก) สมัครซ้ำด้วย Email เดิม
+```
+<img width="327" height="710" alt="image" src="https://github.com/user-attachments/assets/42aaee89-ef36-4d8c-bba6-672a9519ebc8" />
+
+```text
+(ข) ใส่รหัสผ่านสั้นเกินไป 
+```
+<img width="300" height="508" alt="image" src="https://github.com/user-attachments/assets/0f875b58-bbf1-4dd0-a036-166ac2f2dc67" />
 
 ---
 
