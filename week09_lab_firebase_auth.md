@@ -807,8 +807,26 @@ Client-side Validation เพียงอย่างเดียวไม่เ
 > ✅ **Checkpoint 8.1** ถ่ายภาพหน้าจอผลการทดสอบทั้ง 4 ข้อ 
 
 ```text
-บันทึกรูปผลลัพธ์ที่นี่ 
+1. ล็อกอินค้างไว้ แล้วปิดแอปทิ้งไปทั้งหมด (ไม่ใช่แค่ย่อ) จากนั้นเปิดแอปใหม่อีกครั้ง — ควรเข้าหน้า `MainScaffold` ทันทีโดยไม่ต้องล็อกอินซ้ำ (Firebase Auth จำสถานะล็อกอินไว้ให้อัตโนมัติ)
 ```
+<img width="310" height="692" alt="image" src="https://github.com/user-attachments/assets/61b5b7a0-1760-48ec-8479-0ae063de5d18" />
+
+```text
+2. ปิด WiFi/Data ของเครื่องให้หมด แล้วลองเปิดแท็บ "รายการโปรด" และ "ร่างของฉัน" — ควรยังใช้งานได้ปกติเพราะเก็บอยู่ใน Local Database (Drift) ไม่ต้องพึ่งเครือข่าย
+```
+<img width="305" height="672" alt="image" src="https://github.com/user-attachments/assets/977b9353-56dc-4ce1-92e5-1bac089fcba6" />
+
+<img width="308" height="681" alt="image" src="https://github.com/user-attachments/assets/ae5827aa-5762-4dfd-9c7b-aa18339fb54d" />
+
+<img width="310" height="683" alt="image" src="https://github.com/user-attachments/assets/9f942f91-7403-4098-9134-60d58ca71c95" />
+
+```text
+3. ขณะยังปิดเครือข่ายอยู่ ลองกด "โพสต์ขายจริง" กับร่างสักชิ้น — ควรเกิด Error เพราะ Firestore/Storage ต้องการเครือข่ายเสมอ (ต่างจาก Local Database) ตรวจสอบว่าแอปแสดงข้อความ Error ที่เข้าใจได้ ไม่ Crash
+```
+
+
+
+
 
 ---
 
