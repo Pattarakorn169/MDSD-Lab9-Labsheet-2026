@@ -722,12 +722,30 @@ final pages = [
 ```text
 บันทึกรูปผลลัพธ์ที่นี่
 ```
+<img width="1700" height="752" alt="image" src="https://github.com/user-attachments/assets/445073f2-4298-42b0-885b-4377a8ffcf27" />
+
+<img width="1678" height="681" alt="image" src="https://github.com/user-attachments/assets/d9e2a9a9-66fa-4873-aeec-8f943892f80c" />
+
+```text
+ภาพหน้าแบบร่างที่หายไปแล้ว
+```
+
+<img width="307" height="680" alt="image" src="https://github.com/user-attachments/assets/3c75bc71-4029-49b8-b49d-48e10aba400e" />
+
 
 > ✅ **Checkpoint 6.2** ถ่ายภาพหน้าจอ Firebase Console เมนู Storage ที่แสดงไฟล์รูปภาพที่อัปโหลดสำเร็จ และภาพหน้าจอ Firestore ที่แสดงว่าเอกสารมี field `imageUrl` เป็น URL จริงที่เปิดดูได้ ถ่ายภาพหน้าจอแอปที่แสดงรูปสินค้านั้นบนหน้า Home ผ่าน `Image.network(imageUrl)` ด้วย (ย้อนกลับไปถ่ายภาพ Checkpoint 5.1 ให้ครบตอนนี้ ถ้ายังไม่ได้ทำ)
 
 ```text
 บันทึกรูปผลลัพธ์ที่นี่
 ```
+<img width="1688" height="727" alt="image" src="https://github.com/user-attachments/assets/0e6d4493-5582-43a2-8afc-e1575dfecd78" />
+
+<img width="295" height="88" alt="image" src="https://github.com/user-attachments/assets/72bbeea3-af8e-422d-b15c-517a25100504" />
+
+<img width="817" height="686" alt="image" src="https://github.com/user-attachments/assets/b3d0de4b-5f79-4350-b226-03b9066d4d46" />
+
+<img width="296" height="133" alt="image" src="https://github.com/user-attachments/assets/d2cd8106-b02b-4991-a8cf-de42cbe4ff84" />
+
 
 ---
 
