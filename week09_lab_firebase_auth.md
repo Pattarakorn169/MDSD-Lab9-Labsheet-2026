@@ -42,6 +42,8 @@
 
 <img width="1917" height="977" alt="image" src="https://github.com/user-attachments/assets/127a5fe5-caac-4782-9669-30ba0cf1fc60" />
 
+<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/85d275b5-674f-4b68-b531-576eabcb7133" />
+
 
 ### ขั้นตอนที่ 1.2: 🔧 ทำตามขั้นตอน — ติดตั้งเครื่องมือและเชื่อมโปรเจกต์ด้วย FlutterFire CLI
 
